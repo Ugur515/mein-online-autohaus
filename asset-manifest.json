@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/mein-online-autohaus/static/css/main.261cf179.css",
-    "main.js": "/mein-online-autohaus/static/js/main.be638966.js",
+    "main.css": "/mein-online-autohaus/static/css/main.451b26cb.css",
+    "main.js": "/mein-online-autohaus/static/js/main.ffe35547.js",
     "index.html": "/mein-online-autohaus/index.html",
-    "main.261cf179.css.map": "/mein-online-autohaus/static/css/main.261cf179.css.map",
-    "main.be638966.js.map": "/mein-online-autohaus/static/js/main.be638966.js.map"
+    "main.451b26cb.css.map": "/mein-online-autohaus/static/css/main.451b26cb.css.map",
+    "main.ffe35547.js.map": "/mein-online-autohaus/static/js/main.ffe35547.js.map"
   },
   "entrypoints": [
-    "static/css/main.261cf179.css",
-    "static/js/main.be638966.js"
+    "static/css/main.451b26cb.css",
+    "static/js/main.ffe35547.js"
   ]
 }
