@@ -80,19 +80,7 @@ class App
                       description={"Leistung: ca. 280 PS\nDrehmoment: ca. 392 Nm\n0–100 km/h: ca. 5,0 s\nHöchstgeschwindigkeit: ca. 250 km/h\nAntrieb: Allrad\nGetriebe: 5-Gang Schaltgetriebe"} 
                     />
 
-                    <Product 
-                      onAdd={() => this.addItem(1, 'Audi A5 S-Line', 45000)} 
-                      img={process.env.PUBLIC_URL + "/assets/img/audi_a5_S-line.jpg"} 
-                      title="Audi A5 S-Line" 
-                      description={"Leistung: 265 PS\nDrehmoment: 370 Nm\n0–100 km/h: 5,5 s\nHöchstgeschwindigkeit: 250 km/h\nAntrieb: Allrad\nGetriebe: 7-Gang S tronic"} 
-                    />
-
-                    <Product 
-                      onAdd={() => this.addItem(1, 'BMW M2 Competition', 60000)} 
-                      img={process.env.PUBLIC_URL + "/assets/img/bmw_m2_comp.jpg"}  
-                      title="BMW M2 Competition" 
-                      description={"Leistung: 410 PS\nDrehmoment: 550 Nm\n0–100 km/h: 4,2 s\nHöchstgeschwindigkeit: 280 km/h\nAntrieb: Hinterrad\nGetriebe: 7-Gang Doppelkupplung"} 
-                    />
+                   
 
                     <Product 
                       onAdd={() => this.addItem(1, 'BMW M5 F10', 40000)} 
@@ -137,13 +125,6 @@ class App
                     />
 
                     <Product 
-                      onAdd={() => this.addItem(1, 'Mercedes CLS AMG', 75000)} 
-                     img={process.env.PUBLIC_URL + "/assets/img/mercedes_cls.jpg"} 
-                      title="Mercedes CLS AMG" 
-                      description={"Leistung: 612 PS\nDrehmoment: 850 Nm\n0–100 km/h: 3,7 s\nHöchstgeschwindigkeit: 250 km/h (abgeregelt)\nAntrieb: Allrad\nGetriebe: 9-Gang Automatik"} 
-                    />
-
-                    <Product 
                       onAdd={() => this.addItem(1, 'Smart Fortwo', 15000)} 
                       img={process.env.PUBLIC_URL + "/assets/img/smart_fortwo.jpg"} 
                       title="Smart Fortwo" 
@@ -155,7 +136,27 @@ class App
                       img={process.env.PUBLIC_URL + "/assets/img/BMW_i8.jpg"}  
                       title="BMW i8" 
                       description={"Leistung: 374 PS (kombiniert)\nDrehmoment: 570 Nm\n0–100 km/h: 4,4 s\nHöchstgeschwindigkeit: 250 km/h\nAntrieb: Allrad (Hybrid)\nGetriebe: 6-Gang Automatik"} 
-                    />                  
+                    />         
+
+                    {/*
+                     <Product 
+                      onAdd={() => this.addItem(1, 'Audi A5 S-Line', 45000)} 
+                      img={process.env.PUBLIC_URL + "/assets/img/audi_a5_S-line.jpg"} 
+                      title="Audi A5 S-Line" 
+                      description={"Leistung: 265 PS\nDrehmoment: 370 Nm\n0–100 km/h: 5,5 s\nHöchstgeschwindigkeit: 250 km/h\nAntrieb: Allrad\nGetriebe: 7-Gang S tronic"} 
+                    />
+                    <Product 
+                      onAdd={() => this.addItem(1, 'BMW M2 Competition', 60000)} 
+                      img={process.env.PUBLIC_URL + "/assets/img/bmw_m2_comp.jpg"}  
+                      title="BMW M2 Competition" 
+                      description={"Leistung: 410 PS\nDrehmoment: 550 Nm\n0–100 km/h: 4,2 s\nHöchstgeschwindigkeit: 280 km/h\nAntrieb: Hinterrad\nGetriebe: 7-Gang Doppelkupplung"} 
+                    />         
+                    <Product 
+                      onAdd={() => this.addItem(1, 'Mercedes CLS AMG', 75000)} 
+                     img={process.env.PUBLIC_URL + "/assets/img/mercedes_cls.jpg"} 
+                      title="Mercedes CLS AMG" 
+                      description={"Leistung: 612 PS\nDrehmoment: 850 Nm\n0–100 km/h: 3,7 s\nHöchstgeschwindigkeit: 250 km/h (abgeregelt)\nAntrieb: Allrad\nGetriebe: 9-Gang Automatik"} 
+                    />*/}
                 </div>   
                 {this.state.showCart && (
                 <ShoppingCart 
