@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mein-online-autohaus/static/css/main.261cf179.css",
+    "main.js": "/mein-online-autohaus/static/js/main.8159a131.js",
+    "index.html": "/mein-online-autohaus/index.html",
+    "main.261cf179.css.map": "/mein-online-autohaus/static/css/main.261cf179.css.map",
+    "main.8159a131.js.map": "/mein-online-autohaus/static/js/main.8159a131.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.261cf179.css",
+    "static/js/main.8159a131.js"
+  ]
+}
