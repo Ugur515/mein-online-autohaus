@@ -5,7 +5,7 @@ class ShoppingCart extends Component {
 
     constructor(props) {
     super(props);
-    this.successSound = new Audio("/assets/sound/samuel-autohaus-gleggmire.mp3");
+    this.successSound = new Audio(process.env.PUBLIC_URL +"/assets/sound/samuel-autohaus-gleggmire.mp3");
 }
 
     handleCheckout = () => {
@@ -65,7 +65,7 @@ class ShoppingCart extends Component {
                     <div className="modal-overlay">
                         <div className="modal-content">
                             <img 
-                                src="\assets\img\glegg.png" 
+                                src={process.env.PUBLIC_URL + "/assets/img/glegg.png"} 
                                 alt="Danke" 
                                 style={{ width: '300px', height: 'auto', marginBottom: '20px' }}
                             />
