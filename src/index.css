@@ -1,13 +1,116 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;          /* Vollbildbreite */
+    background-color: #1a1717;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.navbar .container-fluid {
+    display: flex;
+    align-items: center;
 }
+
+.navbar-brand {
+    color: rgb(207, 40, 34);
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; /* Falls nötig */
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1a1717;
+  padding: 10px 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  list-style: none;
+  min-width: 150px;
+  z-index: 1001;
+}
+
+.dropdown-menu li {
+  padding: 8px 20px;
+}
+
+.dropdown-menu li a {
+  color: white;
+  font-weight: normal;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #cf2822;
+}
+
+
+body {
+    background-color: #5a5252;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 80px; /* Höhe der Navbar, anpassen falls nötig */
+}
+
+
+
+.app-container{
+    margin-top: 100px;
+    display: flex;
+    padding-right: 32px;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+
+/* ab wann die Produkte untereinander angezeigt werden sollen*/ 
+@media (max-width: 850px) {
+    .product-container{
+        flex-direction: column;
+     }
+}
+
+.shopping-cart{
+    position: sticky;
+    top: 20px; /* Abstand von oben */
+    align-self: start; /* wichtig bei CSS Grid */
+    background-color: white; /* optional für bessere Sichtbarkeit */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.card-body{
+
+    background-color: rgb(167, 176, 201);
+}
+
