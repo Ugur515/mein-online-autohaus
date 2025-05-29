@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './components/navbar';
 import Product from './components/products';
 import ShoppingCart from './components/shopping-cart';
+import Footer from './components/footer';
 
 class App
  extends Component {
@@ -166,8 +167,9 @@ class App
                 onClearCart={this.clearCart}
                 />
                 )}
-
+                <Footer />
             </div>
+
         </React.Fragment>;
     }
 }
